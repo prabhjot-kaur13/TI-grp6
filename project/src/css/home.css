@@ -1,0 +1,16 @@
+.Home-logo {
+  width: 100%;
+  height: 90%;
+}
+
+.container {
+  height: 100vh;
+}
+
+.row {
+  height: 100vh;
+}
+
+.centerDiv {
+  margin-top: 35%;
+}

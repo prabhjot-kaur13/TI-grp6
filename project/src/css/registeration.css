@@ -1,0 +1,16 @@
+.error {
+  color: red;
+}
+
+.form-wrapper {
+  margin-top: 5%;
+}
+
+.info {
+  color: red;
+}
+
+.form-status {
+  color: red;
+  text-align: center;
+}

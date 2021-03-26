@@ -1,15 +1,27 @@
 {
-  "name": "project",
+  "name": "mystore",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "@testing-library/jest-dom": "^5.11.9",
-    "@testing-library/react": "^11.2.5",
-    "@testing-library/user-event": "^12.8.3",
-    "react": "^17.0.2",
-    "react-dom": "^17.0.2",
-    "react-scripts": "4.0.3",
-    "web-vitals": "^1.1.1"
+    "@testing-library/jest-dom": "^4.2.4",
+    "@testing-library/react": "^9.5.0",
+    "@testing-library/user-event": "^7.2.1",
+    "bootstrap": "^4.6.0",
+    "jquery": "^3.6.0",
+    "mdbreact": "^4.27.0",
+    "popper.js": "^1.16.1",
+    "react": "^16.13.1",
+    "react-bootstrap": "^1.0.1",
+    "react-bootstrap-date-picker": "^5.1.0",
+    "react-burger-menu": "^2.6.15",
+    "react-calendar": "^3.1.0",
+    "react-datepicker": "^3.0.0",
+    "react-dom": "^16.13.1",
+    "react-onclickoutside": "^6.9.0",
+    "react-scripts": "3.4.1",
+    "reactstrap": "^8.9.0",
+    "simple-react-calendar": "^2.2.1",
+    "styled-components": "^5.1.1"
   },
   "scripts": {
     "start": "react-scripts start",
@@ -18,10 +30,7 @@
     "eject": "react-scripts eject"
   },
   "eslintConfig": {
-    "extends": [
-      "react-app",
-      "react-app/jest"
-    ]
+    "extends": "react-app"
   },
   "browserslist": {
     "production": [
@@ -34,5 +43,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "case-sensitive-paths-webpack-plugin": "^2.3.0"
   }
 }

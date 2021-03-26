@@ -1,23 +1,32 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import About from "./components/about.jsx";
+import Home from "./components/home.jsx";
+import Contact from "./components/contact.jsx";
+import Dashboard from "./components/dashboard.jsx";
+import Registeration from "./components/registeration.jsx";
+import ForgetPassword from "./components/forgetpassword.jsx";
+import Donation from "./components/donation.jsx";
+import DonationHistory from "./components/donationHistory.jsx";
+import Logout from "./components/logout.jsx";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <Router>
+        <Switch>
+          <Route exact path="/" component={Home} />
+          <Route path="/about" component={About} />
+          <Route path="/contact" component={Contact} />
+          <Route path="/register" component={Home} />
+          <Route path="/registeration" component={Registeration} />
+          <Route path="/dashboard" component={Dashboard} />
+          <Route path="/donation" component={Donation} />
+          <Route path="/forgetpassword" component={ForgetPassword} />
+          <Route path="/donationHistory" component={DonationHistory} />
+          <Route path="/logout" component={Logout} />
+        </Switch>
+      </Router>
     </div>
   );
 }
