@@ -1,11 +1,15 @@
 .navbar {
-  background-color: #595a55;
+  background-color: #066d5f;
+  font-weight: 700;
 }
 
-.navigation-container{
-  font-weight: bold;
+.navigation-container {
+  font-weight: 700;
+  font-family: Arial, Helvetica, sans-serif;
+  color: white;
 }
 
-.navigation-login-container{
-  font-weight: bold;
+.navigation-login-container {
+  font-weight: 500;
+  font-family: Arial, Helvetica, sans-serif;
 }

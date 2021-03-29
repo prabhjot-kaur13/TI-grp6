@@ -7,6 +7,7 @@ class About extends Component {
     return (
       <div>
         <NavigationBar />
+        <div className="body">
         <div className="container">
           <div className="row">
             <div className="col">
@@ -14,7 +15,7 @@ class About extends Component {
             </div>
             <div className="col">
               <div className="centerDiv">
-                <h2> About Us </h2>
+                <h2 className="text"> About Us </h2>
                 <p>
                   MyStore is a one-stop place that aims to offer customers a
                   wide range of basic home and personal products under one roof.
@@ -27,6 +28,7 @@ class About extends Component {
               </div>
             </div>
           </div>
+        </div>
         </div>
       </div>
     );

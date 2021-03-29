@@ -103,6 +103,7 @@ class Registeration extends Component {
     return (
       <div>
         <NavigationBar />
+        <div className="body">
         <div className="container">
           <div className="row">
             <div className="col">
@@ -110,7 +111,7 @@ class Registeration extends Component {
             </div>
             <div className="col">
               <div className="form-wrapper">
-                <h1 className="text-center">Register</h1>
+                <h1 className="text">Register</h1>
                 <form onSubmit={this.handleSubmit}>
                   <Form.Group controlId="name">
                     <Form.Label>Full Name</Form.Label>
@@ -189,6 +190,7 @@ class Registeration extends Component {
                 </form>
               </div>
             </div>
+          </div>
           </div>
         </div>
       </div>

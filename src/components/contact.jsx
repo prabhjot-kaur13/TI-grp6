@@ -7,6 +7,7 @@ class Contact extends Component {
     return (
       <div>
         <NavigationBar />
+        <div className="body">
         <div className="container">
           <div className="row">
             <div className="col">
@@ -14,7 +15,7 @@ class Contact extends Component {
             </div>
             <div className="col">
               <div className="centerDiv">
-                <h2> Contact Info </h2>
+                <h2 className="text"> Contact Info </h2>
                 <p>902-441-8765</p>
                 <p>share_halifax@gmail.com</p>
                 <p>
@@ -24,6 +25,7 @@ class Contact extends Component {
               </div>
             </div>
           </div>
+        </div>
         </div>
       </div>
     );

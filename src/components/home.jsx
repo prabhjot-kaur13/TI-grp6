@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import logo from "./initial-logo.jpg";
+import logo from "./image1.jfif";
 import "../css/home.css";
 import "./login.jsx";
 import Login from "./login.jsx";
@@ -22,7 +22,7 @@ class Home extends Component {
 
   render() {
     return (
-      <div>
+      <div className="body">
         <NavigationBar />
         <div className="container">
           <div className="row">

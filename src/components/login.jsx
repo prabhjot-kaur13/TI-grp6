@@ -95,7 +95,8 @@ class Login extends Component {
     const { errors } = this.state;
     return (
       <div className="form-container">
-        <h1 className="text-center">Welcome</h1>
+        <h1 className="navStyle">Welcome</h1>
+        <div className="text">
         <form onSubmit={this.handleSubmit}>
           <Form.Group controlId="email">
             <Form.Label>Email address</Form.Label>
@@ -124,7 +125,7 @@ class Login extends Component {
           )}
 
           <div className="button-container">
-            <button type="submit" className="btn btn-dark">
+            <button type="submit" className="btn btn-light">
               Log in
             </button>
           </div>
@@ -162,7 +163,8 @@ class Login extends Component {
             </tr>
           </tbody>
         </table>
-      </div>
+        </div>
+        </div>
     );
   }
 }
