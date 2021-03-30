@@ -16,6 +16,9 @@ class Volunteer extends Component {
     }
 
     render() {
+        if (this.state.history === true) {
+            return <Redirect push to={"/dashboard"} />;
+        }
         return (
             <div className="container-leave">
                 <NavigationBarLogin />
