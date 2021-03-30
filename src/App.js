@@ -9,6 +9,7 @@ import ForgetPassword from "./components/forgetpassword.jsx";
 import Donation from "./components/donation.jsx";
 import DonationHistory from "./components/donationHistory.jsx";
 import Logout from "./components/logout.jsx";
+import Volunteer from "./components/volunteer.jsx"
 
 function App() {
   return (
@@ -25,6 +26,7 @@ function App() {
           <Route path="/forgetpassword" component={ForgetPassword} />
           <Route path="/donationHistory" component={DonationHistory} />
           <Route path="/logout" component={Logout} />
+          <Route path="/volunteer" component={Volunteer} />
         </Switch>
       </Router>
     </div>

@@ -16,7 +16,7 @@ class Dashboard extends Component {
       <div className="container-dashboard">
         <NavigationBarLogin />
         <div className="container-card">
-          <h1 className="text" style={{ textAlign: 'center'}}>SHARE</h1>
+          <h1 className="text" style={{ textAlign: 'center' }}>SHARE</h1>
           <h3 className="textnew" style={{ textAlign: 'center' }}>Because We Care</h3>
           <div className="row">
             <div className="col-lg-4 mb-4">
@@ -31,7 +31,7 @@ class Dashboard extends Component {
               <Card>
                 <CardImg top width="50%" src={Volunteer} className="logo" alt="Card image cap" />
                 <CardBody className="text-card">
-                  <CardTitle tag="h5" className="text" style={{ textAlign: 'center' }}><a href="/donation">Become a Volunteer</a></CardTitle>
+                  <CardTitle tag="h5" className="text" style={{ textAlign: 'center' }}><a href="/volunteer">Become a Volunteer</a></CardTitle>
                 </CardBody>
               </Card>
             </div>

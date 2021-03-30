@@ -32,8 +32,8 @@ class ApplyDonation extends Component {
                   <p>Category : </p>
                 </td>
                 <td>
-                  <select class="custom-select mr-sm-2" id="inlineFormCustomSelect">
-                    <option selected>Choose...</option>
+                  <select className="custom-select mr-sm-2" id="inlineFormCustomSelect">
+                    <option value>Choose...</option>
                     <option value="1">Food</option>
                     <option value="2">Clothes</option>
                     <option value="3">Furniture</option>
@@ -69,13 +69,14 @@ class ApplyDonation extends Component {
                   <p>Mode of Deliver : </p>
                 </td>
                 <td>
-                  <select class="custom-select mr-sm-2" id="inlineFormCustomSelect">
-                    <option selected>Choose...</option>
+                  <select className="custom-select mr-sm-2" id="inlineFormCustomSelect">
+                    <option value>Choose...</option>
                     <option value="1">Pick-up</option>
                     <option value="2">Drop</option>
                   </select>
                 </td>
               </tr>
+
               <tr>
                 <td>
                   <p>Date : </p>
