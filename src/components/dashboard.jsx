@@ -39,7 +39,7 @@ class Dashboard extends Component {
               <Card>
                 <CardImg top width="50%" src={Join} className="logo" alt="Card image cap" />
                 <CardBody className="text-card">
-                  <CardTitle tag="h5" className="text" style={{ textAlign: 'center' }}><a href="/donation">Join Us</a></CardTitle>
+                  <CardTitle tag="h5" className="text" style={{ textAlign: 'center' }}><a href="/join">Join Us</a></CardTitle>
                 </CardBody>
               </Card>
             </div>

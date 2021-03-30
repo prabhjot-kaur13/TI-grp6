@@ -3,7 +3,7 @@ import { Redirect } from "react-router-dom";
 import NavigationBarLogin from "./navigationBarLogin";
 import "../css/donate.css";
 
-class Volunteer extends Component {
+class Join extends Component {
     state = {
         history: false,
     };
@@ -25,7 +25,7 @@ class Volunteer extends Component {
                 <div className="container">
                     <div className="table-leave-container">
                         <div className="heading-container">
-                            <h3> Become a Volunteer</h3>
+                            <h3> Join Our Family</h3>
                         </div>
                         <table className="table table-striped table-bordered">
                             <tbody>
@@ -79,27 +79,21 @@ class Volunteer extends Component {
                                 </tr>
                                 <tr>
                                     <td>
-                                        <p>Any thoughts? We'd love to hear! : </p>
+                                        <label className="form-label" htmlFor="customFile">Resume</label>
                                     </td>
                                     <td>
-                                        <textarea
-                                            className="form-control"
-                                            id="textarea"
-                                            rows="1"
-                                        ></textarea>
+                                        <input type="file" className="form-control" id="customFile" />
                                     </td>
                                 </tr>
                             </tbody>
                         </table>
                     </div>
 
-                    <table className="table table-striped table-bordered">
+                    <table className="table table-borderless">
                         <tbody>
                             <tr>
                                 <td>
-                                    <p>Our Core Principles </p>
-                                    <p>SHARE is apolitical - I shall never use Share for poliyical reasons.</p>
-                                    <p>SHARE includes all religions - I shall respect all religions in my work with the Share.</p>
+                                    <p>***Someone from our team will contact you soon.</p>
                                 </td>
                             </tr>
                         </tbody>
@@ -119,4 +113,4 @@ class Volunteer extends Component {
     }
 }
 
-export default Volunteer;
+export default Join;

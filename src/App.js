@@ -10,6 +10,7 @@ import Donation from "./components/donation.jsx";
 import DonationHistory from "./components/donationHistory.jsx";
 import Logout from "./components/logout.jsx";
 import Volunteer from "./components/volunteer.jsx"
+import Join from "./components/join.jsx"
 
 function App() {
   return (
@@ -27,6 +28,7 @@ function App() {
           <Route path="/donationHistory" component={DonationHistory} />
           <Route path="/logout" component={Logout} />
           <Route path="/volunteer" component={Volunteer} />
+          <Route path="/join" component={Join} />
         </Switch>
       </Router>
     </div>
