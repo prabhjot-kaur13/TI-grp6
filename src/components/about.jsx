@@ -13,7 +13,7 @@ class About extends Component {
               <div className="col">
                 <img src={logo} className="Home-logo" alt="logo" />
               </div>
-              <div className="col">
+              <div className="col" style={{ paddingTop: "3%" }}>
 
                 <h2 className="text"> About Us </h2>
                 <p>
