@@ -5,18 +5,18 @@ import "../css/donate.css";
 
 class Volunteer extends Component {
     state = {
-        history: false,
+        becomeVolunteer: false,
     };
 
-    historyClick() {
+    submitClick() {
         this.setState(() => ({
-            history: true,
+            becomeVolunteer: true,
         }));
         alert("Thank you for becoming a part of the community.");
     }
 
     render() {
-        if (this.state.history === true) {
+        if (this.state.becomeVolunteer === true) {
             return <Redirect push to={"/dashboard"} />;
         }
         return (
@@ -97,7 +97,7 @@ class Volunteer extends Component {
                         <tbody>
                             <tr>
                                 <td>
-                                    <p>Our Core Principles </p>
+                                    <p><b>Our Core Principles </b></p>
                                     <p>SHARE is apolitical - I shall never use Share for poliyical reasons.</p>
                                     <p>SHARE includes all religions - I shall respect all religions in my work with the Share.</p>
                                 </td>
@@ -107,7 +107,7 @@ class Volunteer extends Component {
                     <div className="button-container">
                         <button
                             type="submit"
-                            onClick={() => this.historyClick()}
+                            onClick={() => this.submitClick()}
                             className="btn btn-dark"
                         >
                             Submit
