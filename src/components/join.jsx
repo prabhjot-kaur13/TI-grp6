@@ -5,18 +5,18 @@ import "../css/donate.css";
 
 class Join extends Component {
     state = {
-        history: false,
+        submit: false,
     };
 
-    historyClick() {
+    joinClick() {
         this.setState(() => ({
-            history: true,
+            submit: true,
         }));
         alert("Thank you for becoming a part of the community.");
     }
 
     render() {
-        if (this.state.history === true) {
+        if (this.state.submit === true) {
             return <Redirect push to={"/dashboard"} />;
         }
         return (
@@ -93,7 +93,7 @@ class Join extends Component {
                         <tbody>
                             <tr>
                                 <td>
-                                    <p>***Someone from our team will contact you soon.</p>
+                                    <p style={{ color: "red" }}>***Someone from our team will contact you soon.</p>
                                 </td>
                             </tr>
                         </tbody>
@@ -101,7 +101,7 @@ class Join extends Component {
                     <div className="button-container">
                         <button
                             type="submit"
-                            onClick={() => this.historyClick()}
+                            onClick={() => this.joinClick()}
                             className="btn btn-dark"
                         >
                             Submit
