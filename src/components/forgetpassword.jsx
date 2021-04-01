@@ -59,7 +59,7 @@ class ForgetPassword extends Component {
   render() {
     const { errors } = this.state;
     return (
-      <div>
+      <div className="forgetPassword-container">
         <NavigationBar />
         <div className="container">
           <div className="row">
@@ -96,8 +96,8 @@ class ForgetPassword extends Component {
                   ) : this.state.login === 1 ? (
                     ""
                   ) : (
-                          <Redirect push to={"/"} />
-                        )}
+                    <Redirect push to={"/"} />
+                  )}
                 </form>
               </div>
             </div>
