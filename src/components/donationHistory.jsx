@@ -2,16 +2,47 @@ import React, { Component } from "react";
 import { Redirect } from "react-router-dom";
 import { withRouter } from "react-router-dom";
 import NavigationBarLogin from "./navigationBarLogin";
+import axios from "axios";
 
 class DonationHistory extends Component {
   state = {
     applyDonation: false,
+    itemData: []
   };
 
   applyClick = () => {
     this.setState({ applyDonation: true });
   };
 
+  async getItems() {
+    await axios
+      .get("https://ti-backend1.herokuapp.com/api/item")
+      .then((response) => {
+        this.setState({
+          itemData: response.data
+        });
+      })
+      .catch(function (error) {
+        console.log(error);
+        console.log(error.message);
+        alert("Tutors not found!");
+      });
+  }
+
+  createTableRow() {
+    this.getItems();
+    let trs = [];
+    this.state.itemData.map((row, index) => {
+      trs.push(
+        <tr>
+          <td>{index}</td>
+          <td>{row.Category}</td>
+          <td>{row.Date}</td>
+        </tr>
+      );
+    });
+    return trs;
+  }
 
   render() {
     if (this.state.applyDonation) {
@@ -48,28 +79,7 @@ class DonationHistory extends Component {
                 </tr>
               </thead>
               <tbody>
-                <tr>
-                  <td>
-                    <span>1</span>
-                  </td>
-                  <td>
-                    <span>Food</span>
-                  </td>
-                  <td>
-                    <span>10-07-2020</span>
-                  </td>
-                </tr>
-                <tr>
-                  <td>
-                    <span>2</span>
-                  </td>
-                  <td>
-                    <span>Clothes</span>
-                  </td>
-                  <td>
-                    <span>10-02-2021</span>
-                  </td>
-                </tr>
+                {this.createTableRow()}
               </tbody>
             </table>
           </div>
