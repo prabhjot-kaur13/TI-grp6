@@ -25,7 +25,7 @@ class DonationHistory extends Component {
       .catch(function (error) {
         console.log(error);
         console.log(error.message);
-        alert("Tutors not found!");
+        alert("Items not found!");
       });
   }
 
